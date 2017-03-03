@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.fiap.rm78792.desafio2.petshop.MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/strEscolha"
+        android:id="@+id/txtEscolha"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgRaca"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strCollie"
+            android:id="@+id/rb1"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strPit"
+            android:id="@+id/rb2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strAlemao"
+            android:id="@+id/rb3"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strCanadense"
+            android:id="@+id/rb4"
+            android:checked="false" />
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strFemea"
+        android:id="@+id/chBox1"
+        android:checked="false"
+        android:layout_marginTop="30dp"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strAdestrado"
+        android:id="@+id/chBox2"
+        android:checked="false"
+        android:layout_marginEnd="13dp" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strVacina"
+        android:id="@+id/chBox3"
+        android:checked="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strCalcular"
+        android:id="@+id/btnCalcular"
+        android:layout_gravity="center"
+        android:layout_margin="15sp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="R$ 000,00"
+        android:textSize="35sp"
+        />
+
+</LinearLayout>
