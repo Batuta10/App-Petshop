@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.fiap.rm78792.desafio2.petshop.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorBg">
 
 
     <TextView
@@ -28,71 +29,83 @@
         android:layout_marginTop="30dp">
 
         <RadioButton
+            android:id="@+id/rbCollie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/strCollie"
-            android:id="@+id/rb1"
-            android:checked="true" />
+            android:textColor="@color/colorText" />
 
         <RadioButton
+            android:id="@+id/rbPit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:text="@string/strPit"
-            android:id="@+id/rb2"
-            android:checked="false" />
+            android:textColor="@color/colorText" />
 
         <RadioButton
+            android:id="@+id/rbAlemao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:text="@string/strAlemao"
-            android:id="@+id/rb3"
-            android:checked="false" />
+            android:textColor="@color/colorText" />
+
         <RadioButton
+            android:id="@+id/rbCanadense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:text="@string/strCanadense"
-            android:id="@+id/rb4"
-            android:checked="false" />
+            android:textColor="@color/colorText" />
     </RadioGroup>
 
     <CheckBox
+        android:id="@+id/chBoxFemea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/strFemea"
-        android:id="@+id/chBox1"
-        android:checked="false"
         android:layout_marginTop="30dp"
-        />
-
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/strAdestrado"
-        android:id="@+id/chBox2"
         android:checked="false"
-        android:layout_marginEnd="13dp" />
+        android:text="@string/strFemea"
+        android:textColor="@color/colorText" />
 
     <CheckBox
+        android:id="@+id/chBoxAdestrado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:checked="false"
+        android:text="@string/strAdestrado"
+        android:textColor="@color/colorText" />
+
+    <CheckBox
+        android:id="@+id/chBoxVacina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
         android:text="@string/strVacina"
-        android:id="@+id/chBox3"
-        android:checked="true"/>
+        android:textColor="@color/colorText" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/strCalcular"
+        android:textColor="@color/colorText"
+        android:background="@color/colorBgBtn"
         android:id="@+id/btnCalcular"
         android:layout_gravity="center"
         android:layout_margin="15sp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:onClick="calcular"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="R$ 000,00"
+        android:text="@string/strValor"
+        android:textColor="@color/colorText"
+        android:id="@+id/txtResutado"
         android:textSize="35sp"
         />
 

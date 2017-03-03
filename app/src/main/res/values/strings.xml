@@ -9,4 +9,5 @@
     <string name="strAdestrado">Adestrado</string>
     <string name="strVacina">Com todas as vacinas em dia</string>
     <string name="strCalcular">Calcular</string>
+    <string name="strValor">R$ 000,00</string>
 </resources>
