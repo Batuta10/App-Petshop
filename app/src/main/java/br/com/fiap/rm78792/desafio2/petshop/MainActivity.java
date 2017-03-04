@@ -3,6 +3,7 @@ package br.com.fiap.rm78792.desafio2.petshop;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Para Remover a bara de estatos na activity
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //Referenciando os componentes da view na class(this).
         rgRaca = (RadioGroup)findViewById(R.id.rgRaca);
