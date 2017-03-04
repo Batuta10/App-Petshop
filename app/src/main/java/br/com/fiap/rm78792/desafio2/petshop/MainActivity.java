@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Inicializa os Componetes na class(this)
     RadioGroup rgRaca;
     CheckBox chBoxFemea;
     CheckBox chBoxAdestrado;
@@ -53,22 +54,24 @@ public class MainActivity extends AppCompatActivity {
             txtResutado.setText("R$ " + valor);
         }
 
-        //If Encadeado que verifica se o CheckBox esta selecionado, Atribuir os custo que sera usado no valor final (cachoro + itemdoCheckBox).
+        //If que verifica se o CheckBox esta selecionado, Atribuir os custo que sera usado no valor final (cachoro + itemdoCheckBox).
         if(chBoxFemea.isChecked()){
             custo = 180.00;
             valor += custo;
             txtResutado.setText("R$ " + valor);
-        }else
+        }
         if(chBoxAdestrado.isChecked()){
             custo = 400.00;
             valor += custo;
             txtResutado.setText("R$ " + valor);
-        }else
+        }
         if(chBoxVacina.isChecked()){
             custo = 200.00;
             valor += custo;
             txtResutado.setText("R$ " + valor);
-        }else {
+        }
+        //If Verifica de os checkBox nao estao marcados
+        if (chBoxFemea.isChecked() == false && chBoxAdestrado.isChecked() == false && chBoxVacina.isChecked() == false){
             custo = 0;
             valor += custo;
             txtResutado.setText("R$ " + valor);
