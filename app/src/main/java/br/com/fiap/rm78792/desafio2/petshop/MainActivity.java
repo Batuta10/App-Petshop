@@ -73,11 +73,5 @@ public class MainActivity extends AppCompatActivity {
             valor += custo;
             txtResutado.setText("R$ " + valor);
         }
-        //If Verifica de os checkBox nao estao marcados
-        if (chBoxFemea.isChecked() == false && chBoxAdestrado.isChecked() == false && chBoxVacina.isChecked() == false){
-            custo = 0;
-            valor += custo;
-            txtResutado.setText("R$ " + valor);
-        }
     }//Metodo Calcular
 }//Class
