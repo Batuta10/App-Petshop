@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class Main2Activity extends AppCompatActivity implements Runnable {
+public class SplashActivity extends AppCompatActivity implements Runnable {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
